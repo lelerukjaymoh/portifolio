@@ -1,0 +1,872 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Leleruk Jaymoh - Experienced Fullstack developer, Python(Django), Tech enthusiast </title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!--====== Line Icons css ======-->
+    <!-- <link rel="stylesheet" href="{% static '' %}css/LineIcons.css"> -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{% static 'images/logo.png' %}" alt="Logo">
+                            </a> <!-- Logo -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">Services</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#work">Portfolio</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#blog">Blog</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="{% static 'images/banner/shape/shape-1.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="{% static 'images/banner/shape/shape-2.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="{% static 'images/banner/shape/shape-3.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="{% static 'images/banner/shape/shape-2.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="{% static 'images/banner/shape/shape-1.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="{% static 'images/banner/shape/shape-4.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="{% static 'images/banner/shape/shape-5.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="{% static 'images/banner/shape/shape-3.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="{% static 'images/banner/shape/shape-6.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="{% static 'images/banner/shape/shape-3.png' %}" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Hello, I’m</h4>
+                            <h1 class="title">Leleruk Jaymoh</h1>
+                            <p>A Fullstack Web Developer, Python(Django) & Tech enthusiast</p>
+                            <a class="main-btn" href="#work">View my Work</a>
+                        </div> <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <img src="{% static 'images/banner/gdg-kisumu.jpeg' %}" alt="hero">
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul>
+                                    <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">About Me</h2>
+                        <p>I am a creative software developer with a 3+ years experience in developing efficient and
+                            reliable software products for
+                            clients.
+                        </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="about-content mt-50">
+                        <h3 class="about-title font-weight-bold">Get to know me ...</h3>
+                        <p>I am a Python enthusiast primarily building product using the <b>Django</b> framework.
+                            Although my bread and
+                            butter is Django, I have an extensive programming experience having used different
+                            programming languages
+                            (Python, PHP, Javascript, ...) thus can easily pick up a framework or language of your
+                            choice and build that amazing product.
+                        </p>
+                        <p class="mt-3">
+                            I love automating things a lot. I firmly believe that if a task is repetitive, boring,
+                            involves same steps but
+                            must be done it should be automated. I also like solving programming tasks, networking and
+                            making new friends
+                            (<a
+                                href="https://wa.me/+254717771518?text=Hello,%20got%20your%20number%20from%20your%20portifolio%20and%20decide%20to%20say%20hi!">Say
+                                Hi!</a>)
+                        </p>
+                        <p class="mt-3">
+                            I am Innovative/Creative, Idealist, Team Player, Open minded, Good communicator, Problem
+                            Solver, Fast Self-Learner
+                        </p>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-calendar"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Phone:</span> <a href="tel:+254717771518">+254 717771 518</a></p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Email:</span> <a
+                                                href="mailto:lelerukjaymoh@gmail.com">lelerukjaymoh@gmail.com</a></p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni lni-linkedin"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Linkedin:</span> <a
+                                                href="https://www.linkedin.com/in/james-kamau-855599158/">James
+                                                Kamau</a></p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-world"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Website:</span> <a
+                                                href="https://lelerukjaymoh.com">https://lelerukjaymoh.com</a></p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-github"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Github:</span> <a
+                                                href="https://github.com/in/lelerukjaymoh">lelerukjaymoh</a></p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-map-marker"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Location:</span> Remote (due to Covid-19 😞)</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                        </ul>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-xl-3 offset-xl-1 col-lg-4">
+                    <div class="about-skills pt-25">
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Python(Django) | Postgre</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">80</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Web Dev(HTML, JS, CSS)</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">APIs</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">85</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">PHP | MYSQL</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">75</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Automation | Integration</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">95</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Git Verion Control</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">85</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                    </div> <!-- about skills -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="service" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">My Services</h2>
+                        <p>My vast knowledge and a long experience in software development ensure delivery of quality,
+                            efficient
+                            and reliable services. Some of the services i offer include: </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Web Design and Development</h4>
+                            <p>Get amazing website structure and layout designs, UX designs. Give your business an
+                                online
+                                prescence with amazing design to attract your client or upgrade your site to a modern
+                                feature-rich one.
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-rocket"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">API development and Integration</h4>
+                            <p>Convert your data into an API that can be accessed anywhere or Power your business with
+                                amazing APIs and integrations like MPesa, PayPal, Airtable, Salesforce ...
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni lni-comments-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Bulk SMS</h4>
+                            <p>Get an efficient, error-free Bulk SMSing system 💬 and unleash the power to contact all
+                                your
+                                clients, subscribers, employees in a single click.
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-mobile"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">USSD Applications</h4>
+                            <p>Ensure your banking, marketing, services reach all your clients, easily and faster by
+                                leveraging the potential of USSD
+                                applications. Help customer access your services without data or device limits
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center bg-white mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-pallet"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Graphics Design</h4>
+                            <p>Do you need a poster, banner, cards, logo, social-media post designs, video illustration,
+                                motion graphics or any designing. Promote or market your brand or business in a visually
+                                appealing way.
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-consulting"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Consultancy and Support</h4>
+                            <p>Do you need proffesional advice or solutions to any software or tech issues you are
+                                experiencing.
+                                Contact me lets solve it 💪 and leave your clients even happier
+                            </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== CALL TO ACTION PART START ======-->
+
+    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover"
+        style="background-image: url({% static 'images/call-to-action.jpg' %})">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">Have any project on mind?</h2>
+                        <p>Do you have that amazing idea you would want implemented using tech? I am always open for
+                            discussion and
+                            ready to develop an amazing solution. Are you looking for an experienced software developer
+                            to add more
+                            value to your company or organisation? Hire me 👇.
+                        </p>
+                        <ul>
+                            <li><a class="main-btn custom" href="#">download cv</a></li>
+                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
+                        </ul>
+                    </div> <!-- call action content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== WORK PART START ======-->
+
+    <section id="work" class="work-area pt-125 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title pb-25">
+                        <h2 class="title">My Recent Works</h2>
+                        <p>Be it a client's product, personal project or contributing to an open source project,
+                            I am always developing new products everyday. While all clients works are influenced by
+                            the clients problem and its approch in solving it; most of my personal project revolve
+                            around
+                            solving a particular problem, automating boring tasks and creating productive tools for fun.
+                        </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-2.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">EPOK</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-2.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-3.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Your Essay Master</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-3.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-4.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Hairways</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-4.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-5.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">SWIFA</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-5.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-1.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">MPesa Integration</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-1.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="{% static 'images/work/w-6.jpg' %}" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Django Start Project Tool</h3>
+                                <ul>
+                                    <li><a class="image-popup" href="{% static 'images/work/w-6.jpg' %}"><i
+                                                class="lni lni-frame-expand"></i></a></li>
+                                    <li><a href="#"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- single work -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="work-more text-center mt-50">
+                        <a class="main-btn" href="#">more works</a>
+                    </div> <!-- work more -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== WORK PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+
+    <!-- TODO: Removed Pricing to include testimonials instead -->
+
+    <!--====== PRICING PART ENDS ======-->
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">From The Blog</h2>
+                        <p>I love documenting and writing article in my software development journey. This articles
+                            include things I have
+                            learnt while developing software products, my views on tech issues, productivity advice,
+                            Python, Django and
+                            other languages coding tutorials.
+                        </p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="{% static 'images/blog/b-1.jpg' %}" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">Who is Leleruk Jaymoh?</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="{% static 'images/blog/b-2.jpg' %}" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">More posts coming soon.</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="{% static 'images/blog/b-3.jpg' %}" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="#">More posts comming soon.</a></h4>
+                            <span>July 26, 2022</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-more text-center mt-50">
+                        <a class="main-btn" href="#">More posts</a>
+                    </div> <!-- blog more -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Get In Touch</h2>
+                        <p>In case of any software developer job opportunity, a product you would like developed, any
+                            question about tech,
+                            greetings or anything else; feel free to live me a message. I like making new friends</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni lni-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Phone</h6>
+                            <p><a href="tel:+254717771518">+254 717771 518</a></p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <a
+                                href="https://wa.me/+254717771518?text=Hello,%20got%20your%20number%20from%20your%20portifolio%20and%20decide%20to%20contact%20you%20about%20 ">
+                                <i class="lni lni-whatsapp"></i>
+                            </a>
+                            </i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Whatsapp</h6>
+                            <p>
+                                <a
+                                    href="https://wa.me/+254717771518?text=Hello,%20got%20your%20number%20from%20your%20portifolio%20and%20decide%20to%20contact%20you%20about%20 ">
+                                    +254 717771 518
+                                </a>
+                            </p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p><a href="mailto:lelerukjaymoh@gmail.com">lelerukjaymoh@gmail.com</a></p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+            </div> <!-- row -->
+            <div class="row mt-5">
+                <div class="col-lg-9 border-secondary bg-white card m-auto">
+                    <div class="contact-form card-body pt-30 border-danger">
+                        <form id="contact-form" action="">
+                            <div class="single-form">
+                                <input class="font-weight-bold text-dark" type="text" name="name" placeholder="Name">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <input class="font-weight-bold text-dark" type="email" name="email" placeholder="Email">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea class="font-weight-bold text-dark" name="message"
+                                    placeholder="Message"></textarea>
+                            </div> <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Send Message</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-content text-center">
+                            <a href="index.html">
+                                <img src="{% static 'images/logo-2.png' %}" alt="Logo">
+                            </a>
+                            <p class="mt-">A creative software developer with a 3+ years experience in developing
+                                efficient and reliable software products for
+                                clients. Has a love for automating tasks, solving coding problems and debugging code</p>
+                            <ul>
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni lni-github"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="{% static 'js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+
+
+    <!--====== Appear js ======-->
+    <script src="{% static 'js/jquery.appear.min.js' %}"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
