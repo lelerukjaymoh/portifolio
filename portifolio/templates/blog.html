@@ -1,160 +1,118 @@
+{% extends 'includes/header.html' %}
 {% load static %}
+{% load parse_iso %}
 
-<!DOCTYPE html>
-<html lang="en">
+<title>{% block title %} Jay's Blog - A friend in your developer journey {% endblock title %}</title>
 
-<head>
-	<title>Jay's Dev Blog - A friend for in your developer journey</title>
+{% block seo %}
+{% endblock seo %}
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A blog for developers">
-	<meta name="author" content="Leleruk Jaymoh">
-	<link rel="shortcut icon" href="favicon.ico">
+{% block sidebar %}
+	<div id="navigation" class="collapse navbar-collapse flex-column">
+		<div class="profile-section pt-3 pt-lg-0">
+			<img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'blog/images/profile.png' %}"
+				alt="image">
 
-	<!-- FontAwesome JS-->
-	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-	<!-- Theme CSS -->
-	<link id="theme-style" rel="stylesheet" href="{% static 'blog/css/theme-1.css' %}">
-
-</head>
-
-<body>
-
-	<header class="header text-center">
-		<h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Jay's Blog</a></h1>
-
-		<nav class="navbar navbar-expand-lg navbar-dark">
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navigation" class="collapse navbar-collapse flex-column">
-				<div class="profile-section pt-3 pt-lg-0">
-					<img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'blog/images/profile.png' %}"
-						alt="image">
-
-					<h4 class="bio mb-2 text-white">Hi, my name is Leleruk Jaymoh. A Full-Stack developer in 💓 with
-						Python.</h4>
-					<!--//bio-->
-					<hr>
-					<div class="text-white">
-						<i>Find out more about me</i>
-						<ul class="list-inline mx-auto">
-							<li class="list-inline-item font-weight-bold"><a class="text-white" href="https://lelerkjaymoh#about">Formal Me 👔</a></li>
-							<li class="list-inline-item font-weight-bold"><a class="text-white" href="about.html">Informal Me 🏊🏽</a>
-						</li>
-						</ul>
-					</div>
-					<ul class="social-list list-inline py-2 mx-auto">
-						<li class="list-inline-item"><a href="https://www.facebook.com/jaymoh.kish"><i
-									class="lni lni-facebook-filled"></i></a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/Jaymohkish"><i
-									class="lni lni-twitter-original"></i></a></li>
-						<li class="list-inline-item"><a href="https://github.com/lelerkjaymoh"><i
-									class="lni lni-github-original"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.linkedin.com/in/james-kamau-855599158/"><i
-									class="lni lni-linkedin"></i></a></li>
-					</ul>
-					<!--//social-list-->
-					<hr>
-				</div>
-				<!--//profile-section-->
-
-				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span
-								class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="blog-post.html"><i
-								class="fas fa-bookmark fa-fw mr-2"></i>Portifolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+			<h4 class="bio mb-2 text-white">Hi, my name is Leleruk Jaymoh. A Full-Stack developer in 💓 with
+				Python.</h4>
+			<!--//bio-->
+			<hr>
+			<div class="text-white">
+				<i>Find out more about me</i>
+				<ul class="list-inline mx-auto">
+					<li class="list-inline-item font-weight-bold"><a class="text-white"
+							href="https://lelerkjaymoh#about">Formal Me 👔</a></li>
+					<li class="list-inline-item font-weight-bold"><a class="text-white" href="about.html">Informal Me
+							🏊🏽</a>
 					</li>
 				</ul>
-
-				<div class="my-2 my-md-3">
-					<a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
-				</div>
 			</div>
-		</nav>
-	</header>
+			<ul class="social-list list-inline py-2 mx-auto">
+				<li class="list-inline-item"><a href="https://www.facebook.com/jaymoh.kish"><i
+							class="lni lni-facebook-filled"></i></a></li>
+				<li class="list-inline-item"><a href="https://twitter.com/Jaymohkish"><i
+							class="lni lni-twitter-original"></i></a></li>
+				<li class="list-inline-item"><a href="https://github.com/lelerkjaymoh"><i
+							class="lni lni-github-original"></i></a></li>
+				<li class="list-inline-item"><a href="https://www.linkedin.com/in/james-kamau-855599158/"><i
+							class="lni lni-linkedin"></i></a></li>
+			</ul>
+			<!--//social-list-->
+			<hr>
+		</div>
+		<!--//profile-section-->
 
-	<div class="main-wrapper">
-		<section class="cta-section theme-bg-light py-5">
-			<div class="container text-center">
-				<h2 class="heading">Jay's Blog - A friend in your developer journey</h2>
-				<div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
-				<form class="signup-form form-inline justify-content-center pt-3">
-					<div class="form-group">
-						<label class="sr-only" for="semail">Your email</label>
-						<input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail"
-							placeholder="Enter email">
-					</div>
-					<button type="submit" class="btn btn-primary">Subscribe</button>
-				</form>
-			</div>
-			<!--//container-->
-		</section>
-		<section class="blog-list px-3 py-5 p-md-5">
-			<div class="container">
-				<div class="item mb-5">
-					<div class="media">
-						<img class="mr-3 img-fluid post-thumb d-none d-md-flex"
-							src="{% static 'blog/images/blog/blog-post-thumb-1.jpg' %}" alt="image">
-						<div class="media-body">
-							<h3 class="title mb-1"><a href="blog-post.html">Why Every Developer Should Have A Blog</a>
-							</h3>
-							<div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5
-									min read</span><span class="comment"><a href="#">8 comments</a></span></div>
-							<div class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-								ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-								montes, nascetur ridiculus mus. Donec quam felis, ultricies...</div>
-							<a class="more-link" href="blog-post.html">Read more &rarr;</a>
-						</div>
-						<!--//media-body-->
-					</div>
-					<!--//media-->
-				</div>
-				<!--//item-->
+		<ul class="navbar-nav flex-column text-left">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span
+						class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Portifolio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+			</li>
+		</ul>
 
-				<nav class="blog-nav nav nav-justified my-5">
-					<a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i
-							class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
-					<a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i
-							class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-				</nav>
-
-			</div>
-		</section>
-
-
+		<div class="my-2 my-md-3">
+			<a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
+		</div>
 	</div>
-	<!--//main-wrapper-->
+{% endblock sidebar %}
+
+{% block content %}
+<div class="main-wrapper">
+	<section class="cta-section theme-bg-light py-5">
+		<div class="container text-center">
+			<h2 class="heading">Jay's Blog - A friend in your developer journey</h2>
+			<div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
+			<form class="signup-form form-inline justify-content-center pt-3">
+				<div class="form-group">
+					<label class="sr-only" for="semail">Your email</label>
+					<input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail"
+						placeholder="Enter email">
+				</div>
+				<button type="submit" class="btn btn-primary">Subscribe</button>
+			</form>
+		</div>
+		<!--//container-->
+	</section>
+	<section class="blog-list px-3 py-5 p-md-5">
+		<div class="container">
+
+			<!-- List of posts -->
+			{% for post in recent_posts %}
+			<div class="item mb-5">
+				<div class="media">
+					<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ post.featured_image }}" alt="image">
+					<div class="media-body">
+						<h3 class="title mb-1"><a href="{% url 'blog_post' post.slug %}">{{ post.title }}</a>
+						</h3>
+						<div class="meta mb-1"><span class="date">Published
+								{{ post.published|parse_iso|date:'d/m/Y' }}</span><span
+								class="time">{{ post.featured_image_alt }}
+								min read</span><span class="comment"><a href="#">8 comments</a></span></div>
+						<div class="intro">{{ post.summary|truncatewords:35}}...</div>
+						<a class="more-link" href="{% url 'blog_post' post.slug %}">Read more &rarr;</a>
+					</div>
+					<!--//media-body-->
+				</div>
+				<!--//media-->
+			</div>
+			{% endfor %}
 
 
+			<nav class="blog-nav nav nav-justified my-5">
+				<a class="nav-link-next nav-item nav-link rounded" href="{% url 'blog_list' 1 %}">More Posts<i
+						class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+			</nav>
 
-	<!-- Javascript -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-			crossorigin="anonymous"></script>
+		</div>
+	</section>
 
-</body>
 
-</html>
+</div>
+<!--//main-wrapper-->
+
+{% endblock content %}
