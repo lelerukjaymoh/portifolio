@@ -1,5 +1,9 @@
 import os
 
+# Sentry
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -21,6 +25,16 @@ load_dotenv()
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 BUTTER_CMS_KEY = os.getenv("BUTTER_CMS_KEY")
+SENTRY_DNS = os.getenv("SENTRY_DNS")
+
+# Sentry setup
+sentry_sdk.init(
+    dsn=SENTRY_DNS,
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+
+    send_default_pii=True
+)
 
 # Application definition
 
