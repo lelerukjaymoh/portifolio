@@ -12,7 +12,7 @@ def home(request):
     return render(request, 'index.html', {})
 
 def blog(request):
-    response = client.posts.all({'page_size': 1,})    
+    response = client.posts.all()    
     pprint.pprint(response)
 
     try:
