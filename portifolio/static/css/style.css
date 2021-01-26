@@ -1333,6 +1333,7 @@ p {
 }
 
 .single-work .work-image img {
+  height: 200px !important;
   width: 100%;
 }
 
@@ -1594,6 +1595,7 @@ p {
 }
 
 .single-blog .blog-image img {
+  height: 230px;
   width: 100%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1603,6 +1605,7 @@ p {
 }
 
 .single-blog .blog-content {
+  opacity: .8;
   width: 75%;
   position: absolute;
   bottom: 0;
@@ -1660,6 +1663,7 @@ p {
 
 .single-blog:hover .blog-content {
   background-color: #06D6A0;
+  opacity: 1;
 }
 
 .single-blog:hover .blog-content .blog-title a {
